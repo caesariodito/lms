@@ -25,8 +25,8 @@ services:
     volumes:
       - .:/workspace
     ports:
-      - ${FRAPPE_HTTP_PORT:-8800}:8800
-      - ${FRAPPE_SOCKETIO_PORT:-9900}:9900
+      - ${FRAPPE_HTTP_PORT:-8800}:8000
+      - ${FRAPPE_SOCKETIO_PORT:-9900}:9000
 
 volumes:
   mariadb-data:
