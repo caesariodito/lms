@@ -30,7 +30,7 @@ bench new-site lms.localhost \
 --force \
 --mariadb-root-password 123 \
 --admin-password admin \
---no-mariadb-socket
+--mariadb-user-host-login-scope=mariadb
 
 bench --site lms.localhost install-app lms
 bench --site lms.localhost set-config developer_mode 1
